@@ -15,7 +15,7 @@ jobs:
   job-two:
     runs-on: ubuntu-latest
     needs: job-one
-    if: success()
+    if: failure()
     steps:
       - name: Run only if job one succeeds
         run:
